@@ -1,0 +1,108 @@
+.detailsCont {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+.fDetails {
+  width: 65%;
+  height: 100%;
+}
+.dActions {
+  min-width: 100%;
+  height: auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.backBtn,
+.editFbtn {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.backBtn {
+  min-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*  */
+}
+.arrowUrl {
+  margin-right: 7px;
+}
+.backTxt {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-gray);
+}
+.editFbtn {
+  min-width: auto;
+  height: auto;
+  padding: 12px 22px;
+  border-radius: 10px;
+  /*  */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dropDownLabel) !important;
+  background-color: var(--blue);
+}
+@media (hover: hover) and (pointer: fine) {
+  .editFbtn:hover {
+    background-color: var(--editFeedbackHover);
+  }
+}
+.dFItem {
+  min-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.dCommentsReplies {
+  min-width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  /* position: relative; */
+}
+
+.dAddComment {
+  min-width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+}
+@media screen and (max-width: 1024px) {
+  .detailsCont {
+    padding: 10px;
+  }
+  .fDetails {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .dCommentsReplies {
+    padding: 8px;
+  }
+  .backTxt {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .editFbtn {
+    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

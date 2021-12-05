@@ -1,0 +1,28 @@
+{
+  "category": [
+    {
+      "id": 0,
+      "value": "All"
+    },
+    {
+      "id": 1,
+      "value": "UI"
+    },
+    {
+      "id": 2,
+      "value": "UX"
+    },
+    {
+      "id": 3,
+      "value": "Enhancement"
+    },
+    {
+      "id": 4,
+      "value": "Bug"
+    },
+    {
+      "id": 5,
+      "value": "Feature"
+    }
+  ]
+}

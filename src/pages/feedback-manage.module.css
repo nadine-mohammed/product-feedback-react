@@ -1,0 +1,328 @@
+.manageCont {
+  min-width: 100%;
+  height: 100vh;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manage {
+  min-width: 40%;
+  height: 100%;
+}
+.manageActions {
+  min-width: 100%;
+  height: 12%;
+}
+.backBtn {
+  min-width: auto;
+  height: auto;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.arrowUrl {
+  margin-right: 7px;
+}
+.backTxt {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-gray);
+}
+.manageForm {
+  min-width: 100%;
+  height: 85%;
+  padding: 12px 20px;
+  background-color: white;
+}
+.formIco {
+  min-width: 100%;
+  height: 5%;
+  position: relative;
+}
+.formIcoUrl {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -48px;
+}
+.formTitleTxt {
+  height: 10%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.333333px;
+  color: var(--dark-blue);
+}
+.mainInputs {
+  min-width: 100%;
+  height: 75%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.mainInputs::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+.mainInputs::-webkit-scrollbar-thumb {
+  background-color: rgba(12, 14, 22, 0.2);
+  border-radius: 4px;
+}
+.fFeedbackTitle,
+.fFeedbackCategory,
+.fFeedbackStatus,
+.fFeedbackDetails {
+  margin-bottom: 25px;
+}
+.fFeedbackTitle {
+  min-width: 100%;
+  height: auto;
+}
+.title {
+  min-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+.mainTitle {
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.194444px;
+  color: var(--dark-blue);
+}
+.moreInfo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-gray);
+}
+.fFeedbackCategory {
+  min-width: 100%;
+  height: auto;
+  position: relative;
+}
+.optionsBtn {
+  width: 100%;
+  height: auto;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-gray);
+  /*  */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+}
+.optionsBtn:focus {
+  border: 1px solid var(--blue);
+}
+.optionList {
+  min-width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+
+.optionItem {
+  min-width: 100%;
+  height: auto;
+  padding: 7px 18px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*  */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: var(--dark-gray);
+}
+.optionItem:hover {
+  color: var(--purple);
+}
+.optionItem:last-child {
+  border: none;
+}
+.fFeedbackStatus {
+  min-width: 100%;
+  height: auto;
+  position: relative;
+}
+.fFeedbackDetails {
+  min-width: 100%;
+  height: auto;
+}
+.formActions {
+  min-width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-top: 3px;
+}
+
+.formDeleteBtn,
+.formAddBtn,
+.formCancelBtn {
+  width: auto;
+  height: auto;
+  color: white !important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  /*  */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .formDeleteBtn:hover {
+    background-color: var(--delete-btn-hover);
+  }
+  .formCancelBtn:hover {
+    background-color: var(--cancel-btn-hover);
+  }
+  .formAddBtn:hover {
+    background-color: var(--addCommentHover);
+  }
+}
+.formDeleteBtn {
+  background-color: var(--delete-btn);
+}
+.formCancelBtn {
+  margin-right: 8px;
+  background-color: var(--dark-blue);
+}
+.formAddBtn {
+  background-color: var(--purple);
+}
+.inp {
+  width: 100%;
+  height: auto;
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  /*  */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--dark-blue);
+}
+.cancelAndSave {
+  display: flex;
+  flex-direction: row;
+}
+.emptyError {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--delete-btn);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .manageCont {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  .manage {
+    width: 100%;
+  }
+  .manageActions {
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .manageForm {
+    height: auto;
+    padding: 12px 10px;
+  }
+  .formIco {
+    margin-bottom: 28px;
+  }
+  .formTitleTxt {
+    height: auto;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+  }
+  .mainInputs {
+    height: auto;
+    overflow-y: hidden;
+  }
+  .fFeedbackTitle,
+  .fFeedbackCategory,
+  .fFeedbackStatus,
+  .fFeedbackDetails {
+    margin-bottom: 18px;
+  }
+  .mainTitle {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.180556px;
+  }
+  .moreInfo {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .inp {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .optionsBtn {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .optionItem {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .formActions {
+    height: auto;
+    flex-direction: column;
+  }
+  .cancelAndSave {
+    width: 100%;
+    flex-direction: column;
+  }
+  .formDeleteBtn,
+  .formCancelBtn,
+  .formAddBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .emptyError {
+    font-size: 12px;
+  }
+}

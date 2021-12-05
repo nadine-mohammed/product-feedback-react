@@ -1,0 +1,147 @@
+.homePage {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  min-width: 25%;
+  height: auto;
+}
+.pageContent {
+  min-width: 75%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  min-width: 100%;
+  height: 70px;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--topbarBg);
+}
+.feedbackList,
+.empty {
+  min-width: 100%;
+  height: 100%;
+}
+.feedbackList {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.emptyUrl {
+  width: 130px;
+  height: 137px;
+  margin-bottom: 25px;
+}
+.emptyTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: var(--dark-blue);
+}
+.emptyInfo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: var(--dark-gray);
+}
+.btnCont {
+  min-width: auto;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  /*  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*  */
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: var(--purple);
+}
+.btnIcoUrl {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  */
+  margin-right: 5px;
+}
+.btnTxt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dropDownLabel);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .homePage {
+    flex-direction: column;
+  }
+  .sidebar {
+    min-width: 100%;
+    /*  */
+    height: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .topbar {
+    margin-bottom: 3%;
+  }
+  .pageContent {
+    min-width: 100%;
+  }
+  .emptyUrl {
+    width: 130px;
+    height: 137px;
+  }
+  .emptyTitle {
+    font-size: 24px;
+  }
+  .emptyInfo {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .homePage {
+    flex-direction: column;
+  }
+  .sidebar,
+  .pageContent {
+    min-width: 100%;
+  }
+  .topbar {
+    margin-bottom: 6%;
+    border-radius: 0;
+  }
+  .emptyUrl {
+    width: 102px;
+    height: 108px;
+  }
+  .emptyTitle {
+    font-size: 18px;
+  }
+  .emptyInfo {
+    font-size: 13px;
+  }
+}

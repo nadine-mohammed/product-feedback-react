@@ -1,0 +1,52 @@
+.addRepCont {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.replyInput {
+  min-width: 80%;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  background-color: var(--light-gray);
+  margin-right: 10px;
+}
+.replyInput:focus {
+  border: 1px solid var(--blue);
+}
+.postRepBtn {
+  min-width: 10%;
+  height: 10%;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dropDownLabel);
+  background-color: var(--purple);
+}
+@media (hover: hover) and (pointer: fine) {
+  .postRepBtn:hover {
+    background-color: var(--addCommentHover);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .replyInput {
+    min-width: 70%;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .postRepBtn {
+    min-width: 8%;
+    height: 8%;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

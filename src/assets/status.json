@@ -1,0 +1,24 @@
+{
+  "status": [
+    {
+      "id": 1,
+      "value": "planned",
+      "color": "orange"
+    },
+    {
+      "id": 2,
+      "value": "suggestion",
+      "color": "orange"
+    },
+    {
+      "id": 3,
+      "value": "in-progress",
+      "color": "purple"
+    },
+    {
+      "id": 4,
+      "value": "live",
+      "color": "blue"
+    }
+  ]
+}

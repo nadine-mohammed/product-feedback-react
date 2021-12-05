@@ -1,0 +1,143 @@
+.topbarCont {
+  min-width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.txtCont {
+  min-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topbarIco,
+.topbarTitle,
+.topbarLabelAndDpBtn {
+  margin-right: 15px;
+}
+
+.topbarTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  margin-right: 80px;
+  color: white;
+}
+.topbarLabelAndDpBtn {
+  min-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dropdownBtnAndOpt {
+  min-width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdownLabel,
+.dropdownBtn,
+.btnTxt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dropDownLabel);
+}
+.dropdownLabel {
+  height: 100%;
+}
+.dropdownBtn,
+.btnCont {
+  min-width: auto;
+  height: auto;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btnCont {
+  padding: 10px 15px;
+  background-color: var(--purple);
+}
+@media (hover: hover) and (pointer: fine) {
+  .btnCont:hover {
+    background-color: var(--addCommentHover);
+  }
+}
+.btnIcoUrl {
+  margin-right: 5px;
+}
+.dropdownBtn {
+  padding: 5px 10px;
+}
+.dpVal {
+  margin-right: 6px;
+}
+.dpIcoUrl,
+.btnIcoUrl {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options {
+  min-width: 100%;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+}
+.optionCont {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+.option:last-child {
+  border-bottom: none;
+}
+.optionVal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--dark-gray);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .topbarIco,
+  .topbarTitle {
+    display: none;
+  }
+  .dropdownLabel,
+  .dropdownBtn,
+  .btnTxt {
+    font-size: 11px;
+  }
+  .optionVal {
+    font-size: 13px;
+  }
+}

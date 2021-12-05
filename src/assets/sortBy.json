@@ -1,0 +1,20 @@
+{
+  "sortBy": [
+    {
+      "id": 1,
+      "value": "Most Upvotes"
+    },
+    {
+      "id": 2,
+      "value": "Least Upvotes"
+    },
+    {
+      "id": 3,
+      "value": "Most Comments"
+    },
+    {
+      "id": 4,
+      "value": "Least Comments"
+    }
+  ]
+}

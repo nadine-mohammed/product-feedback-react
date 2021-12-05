@@ -1,0 +1,75 @@
+.addComment {
+  min-width: 100%;
+  height: 100%;
+}
+.addCommentTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+.commentInput {
+  min-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  background-color: var(--light-gray);
+  margin-bottom: 10px;
+}
+.commentInput:focus {
+  border: 1px solid var(--blue);
+}
+.addCMoreInfo {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.counterTxt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--dark-gray);
+}
+.postCommentBtn {
+  min-width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  /*  */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dropDownLabel);
+  /*  */
+  background-color: var(--purple);
+}
+@media (hover: hover) and (pointer: fine) {
+  .postCommentBtn:hover {
+    background-color: var(--addCommentHover);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .commentInput {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .postCommentBtn {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .counterTxt {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

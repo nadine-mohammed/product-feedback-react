@@ -1,0 +1,93 @@
+.topbar {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleAndBack {
+  min-width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.backBtn {
+  min-width: auto;
+  height: auto;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.arrowUrl {
+  color: white;
+  margin-right: 3px;
+  font-size: 18px;
+}
+.backTxt {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+.roadmapTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.333333px;
+  color: white;
+}
+.btnCont {
+  min-width: auto;
+  height: auto;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--purple);
+}
+@media (hover: hover) and (pointer: fine) {
+  .btnCont:hover {
+    background-color: var(--addCommentHover);
+  }
+}
+.btnIcoUrl {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.btnTxt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dropDownLabel);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btnTxt {
+    font-size: 11px;
+  }
+  .backTxt {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .roadmapTitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

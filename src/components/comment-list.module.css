@@ -1,0 +1,28 @@
+.commentsRep {
+  min-width: 100%;
+  height: 300px;
+}
+.cTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: var(--dark-blue);
+  padding-bottom: 30px;
+}
+.commentList {
+  min-width: 100%;
+  height: 100%;
+  padding: 0 14px;
+  overflow-y: scroll;
+}
+
+.commentList::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+.commentList::-webkit-scrollbar-thumb {
+  background-color: rgba(12, 14, 22, 0.2);
+  border-radius: 4px;
+}
